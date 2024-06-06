@@ -12,13 +12,17 @@ module.exports = {
   plugins: ['react-refresh', 'prettier'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
+    'prefer-const': 'error',
+    'no-var': 'error',
+    'no-console': 'warn',
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'prettier/prettier': [
       'error',
       {
         jsxSingleQuote: false,
-        endOfLine: 'auto',
+        endOfLine: 'lf',
       },
     ],
+    'no-alert': 'error', // для тестирования
   },
-}
+};
