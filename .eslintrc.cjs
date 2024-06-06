@@ -20,7 +20,7 @@ module.exports = {
       'error',
       {
         jsxSingleQuote: false,
-        endOfLine: 'lf',
+        endOfLine: 'auto',
       },
     ],
     'no-alert': 'error', // для тестирования
